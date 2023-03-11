@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog of Md Anisur Rahman</title>
+    <link rel="icon" href="/Image/Fav-icon.png">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/57a3f7d9d0.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <header id="head">
+        <nav class="nav-bar">
+            <h1>A<span class="text-color">N</span>I<span class="text-color">S</span>U<span class="text-color">R</span></h1>
+            <div class="Search-bar">
+                <form action="https://google.com/search" method="get" class="S-form" >
+                    <input type="text"  placeholder="Search anythink" name="q">
+                    <button  type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+            </div> 
+            <ul class="nav">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>                
+                <li><a href="#contact">Hire Me</a></li>
+            </ul> 
+        </nav>        
+    </header>
+    <section id="hero">
+        <img src="/Image/My project-1 (3).png" class="home-pic" alt="My Picture">
+
+        <div class="hero-text">
+            <h2>Hi,This is <span class="text-color">MD Anisur Rahman</span></h2>
+            <p>I'm a fornt end and backend wep devloper and work with popular and dinamic frame work python-django </p>
+        </div>
+        
+       
+
+    </section>
+    <section id="about">        
+        <div class="about-text">
+            <h2><span class="id-text-color">About Me:</span> </h2>
+            <p>
+                I am Md Anisur Rahman from Bangladesh.Web devloper & Data Science Aspirant | Quality Professional, Mobile Manufacturing Industry - Xiaomi | Ex_Nokia | Ex_Vivo. <br><br>
+
+                I have a total 4-year Experience in Data Entry,Webscraping and manufacturing plants. I am working as an Engineer at Xiaomi. Responsibility is MQE & OBA. I was work as In Process Quality Control(IPQC) Incharge at Vibrant Software bd limited(Union group) & PQC Shift incharge at Vivo Bangladesh Factory. I am skilled at smart and Bar phone manufacturing process also the R&D and Repair(ORC & TRC) process & SMT process, root cause Analysis & improvement, Manpower Management, Project Management, and Product management. I love to acquire knowledge. 
+
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+               <ul>
+                <li><span>Web Devlopment</span> <br>Web devloper</li>
+                <li><span>Web Scraping</span> <br>Data collection,data mining</li>
+                <li><span>Programing Language/Software </span> <br>HTML <br> CSS <br>Javascript <br> Python <br> Django</li>
+               </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                 <li><span>Feb-2022 to current</span> <br>OBA Engineer at Xiaomi</li>
+                 <li><span>Sept-2021 to Feb-2022</span> <br>IPQC Executive at Nokia</li>
+                 <li><span>Sept-2019 to Sept-2022</span> <br> PQC Shift Incharge at Vivo</li>
+                </ul>
+             </div>
+             <div class="tab-contents" id="education">
+                <ul>
+                 <li><span>2023</span> <br>Full Stack Web Devlopment from Bongodev</li>
+                 <li><span>2023</span> <br>Bsc in EEE from Southeast University</li>
+                 <li><span>2019</span> <br> Diploma in IPCT(ET) from Munshiganj Polytechnic Inistitute</li>
+                </ul>
+             </div>
+
+        </div>
+        <img src="/Image/about1.png" claas="about-pic" alt="">
+
+    </section>
+    <section id="contact">        
+        <div class="contact-left">
+            <h2><span class="id-text-color">Hire Me:</span> </h2>            
+            <p><i class="fa-solid fa-paper-plane"></i>  mdanisurrahman172@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>  +88 01873318216</p>
+            <div class="social-icon">
+                <a href="https://www.facebook.com/dsanisur" target="_blank"><i class="fa-brands fa-facebook" class="icon"></i></a>
+                <a href="https://www.linkedin.com/in/md-anisur-rahman-87659b17b/ " target="_blank"><i class="fa-brands fa-linkedin" class="icon"></i></a>
+                <a href="https://github.com/dsanisur" target="_blank"><i class="fa-brands fa-github" class="icon"></i></a>
+            </div>
+            <a href="" download class="btn btn2">Download CV</a>
+        </div>
+        <form class="form" action="https://formspree.io/f/mnqyvabz" method="POST">
+            
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="text" name="Email" placeholder="xyz@gmail.com"required>
+            <textarea name="Message" placeholder="Message"></textarea>
+
+            <button type="submi" class="btn btn3">Submit</button>
+        </form>
+
+    </section>
+
+    <footer id="footer">
+        Copyright&copy; Anisur
+    </footer>
+    
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+    </script>
+</body>
+</html>
